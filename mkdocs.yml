@@ -58,6 +58,7 @@ nav:
   - React and TSX: 12-react-and-tsx.md
   - Hands-on labs: 13-hands-on-labs.md
   - Interactive playground: playground.md
+  - Interview prep: 14-interview-prep.md
 
 markdown_extensions:
   - admonition
@@ -75,6 +76,7 @@ markdown_extensions:
       alternate_style: true
 plugins:
   - search
+  - mkdocs_quiz
 
 extra_javascript:
   - javascripts/code-runner.js
