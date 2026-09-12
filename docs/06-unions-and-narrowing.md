@@ -117,22 +117,3 @@ This does not happen when assigning an existing variable because excess property
 4. Create an array of mixed shapes and use `map` to compute all areas.
 5. Write `function totalArea(shapes: Shape[]): number` using `reduce`.
 6. Add a fourth shape `Triangle` only if the previous switch handled it with an explicit case. Try adding an unhandled case and see the compiler warn.
-
-## Try editing and running
-
-```ts { .ts-runner data-expected="100" data-title="Shape area calculator" }
-type Shape =
-  | { kind: 'circle'; radius: number }
-  | { kind: 'square'; side: number }
-
-function area(shape: Shape): number {
-  switch (shape.kind) {
-    case 'circle':
-      return Math.PI * shape.radius * shape.radius
-    case 'square'
-      return shape.side * shape.side
-  }
-}
-
-console.log(area({ kind: 'square', side: 10 }))
-```

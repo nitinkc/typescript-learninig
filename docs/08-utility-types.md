@@ -119,14 +119,3 @@ type Nullable<T> = {
 5. Use `Readonly<User>` for a `currentUser` constant and try to mutate it.
 6. Use `Record<string, User>` to build a `userByEmail` lookup.
 7. Use `ReturnType` to define a type alias from a `function makeUser(): User`.
-
-## Try editing and running
-
-```ts { .ts-runner data-expected="Ada" data-title="Profile editor" }
-interface User { id: string; name: string; email: string }
-
-type UserForm = Omit<User, 'id'
-
-const form: UserForm = { name: 'Ada', email: 'ada@example.com' }
-console.log(form.name)
-```

@@ -20,7 +20,7 @@ Build a typed product catalog with filtering and sorting.
 - Use a generic `paginate<T>(items: T[], page: number, pageSize: number): T[]`.
 - Add a `Result<Product[]>` return type for a search function.
 
-#### Try editing and running
+#### Try it in the playground
 
 ```ts { .ts-runner data-expected="Phone" data-title="Lab 1: e-commerce product catalog" }
 interface Product {
@@ -56,7 +56,7 @@ Build a small task manager using discriminated unions.
 - Use `const` assertions for state literals.
 - Add `totalTime(task: Task): number | null` that only returns a value for completed tasks.
 
-#### Try editing and running
+#### Try it in the playground
 
 ```ts { .ts-runner data-expected="Read" data-title="Lab 2: task manager with narrowing" }
 type Task =
@@ -91,7 +91,7 @@ Build a wrapper around `fetch` that returns typed results.
 - Add a small runtime validation check for the shape of `Post`.
 - Add a `postJson<T, U>(url: string, body: U): Promise<ApiResult<T>>`.
 
-#### Try editing and running
+#### Try it in the playground
 
 ```ts { .ts-runner data-expected="Loaded" data-title="Lab 3: typed HTTP client" }
 type ApiResult<T> =
@@ -124,7 +124,7 @@ Build a small React app that tracks expenses.
 - Use `useReducer` with a typed action union.
 - Add `localStorage` persistence with a validation step before loading.
 
-#### Try editing and running
+#### Try it in the playground
 
 ```ts { .ts-runner data-expected="30" data-title="Lab 4: React expense tracker" }
 interface Expense {
@@ -159,7 +159,7 @@ Use classes to model a small library system.
 - Add `private` and `protected` fields.
 - Implement a `borrow` history with `readonly` arrays.
 
-#### Try editing and running
+#### Try it in the playground
 
 ```ts { .ts-runner data-expected="TypeScript by Ada" data-title="Lab 5: library class model" }
 abstract class Item {

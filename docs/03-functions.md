@@ -121,7 +121,7 @@ function makeUser(name: string): { id: string; name: string } {
 6. Add `void` to a function `printResult(score: number, description: string): void` that logs them together.
 7. Introduce a wrong `round` value such as `'yes'` and watch the compiler complain.
 
-## Try editing and running
+## Try it in the playground
 
 ```ts { .ts-runner data-expected="85.5" data-title="Format a score" }
 function formatScore(score: number): string {

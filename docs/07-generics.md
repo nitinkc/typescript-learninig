@@ -97,12 +97,3 @@ This captures the relationship between the input array item type and the output 
 4. Create one store for `interface User` and one for `interface Product`.
 5. Add, retrieve, and remove items.
 6. Try to add an item without an `id` and observe the constraint error.
-
-## Try editing and running
-
-```ts { .ts-runner data-expected="a" data-title="Generic data store" }
-function first<T>(items: T[]): T | undefined {
-  return items[0]
-
-console.log(first(['a', 'b']))
-```

@@ -110,15 +110,3 @@ interface Contact {
 5. Write `function totalDuration(course: Course): number` that sums `durationMinutes`.
 6. Try to reassign a lesson's `id` and observe the compiler error from `readonly`.
 7. Add an index signature to `interface Progress` that maps a lesson id to a boolean `completed`.
-
-## Try editing and running
-
-```ts { .ts-runner data-expected="Intro" data-title="Model a course catalog" }
-interface Lesson {
-  readonly id: string
-  title: string
-  durationMinutes: number
-
-const lesson: Lesson = { id: '1', title: 'Intro', durationMinutes: 10 }
-console.log(lesson.title)
-```

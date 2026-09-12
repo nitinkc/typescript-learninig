@@ -134,7 +134,7 @@ npx tsc --watch
 ??? question "What did the error teach you?"
     TypeScript noticed the wrong argument type before the program ran. Remove the wrong call and recompile.
 
-## Try editing and running
+## Try it in the playground
 
 ```ts { .ts-runner data-expected="77" data-title="Temperature converter" }
 function celsiusToFahrenheit(c: number): number {

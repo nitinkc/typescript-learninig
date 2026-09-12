@@ -131,7 +131,7 @@ Type aliases can describe primitives, unions, tuples, and objects. They are usef
 ??? question "When should you use `unknown` instead of `any`?"
     Use `unknown` whenever you receive data you cannot trust. It forces you to check the shape before using it.
 
-## Try editing and running
+## Try it in the playground
 
 ```ts { .ts-runner data-expected="HELLO" data-title="Validate a form input" }
 const rawInput: unknown = 'Hello'

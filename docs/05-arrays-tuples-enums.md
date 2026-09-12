@@ -114,11 +114,3 @@ This produces no runtime code and works well with narrowing and autocompletion.
 6. Use `map` to produce an array of strings in the form `'Title - X minutes'`.
 7. Use `reduce` to total the duration of all tasks.
 8. Create a `readonly [string, number]` tuple named `dailyLimit` and try to reassign one of its elements.
-
-## Try editing and running
-
-```ts { .ts-runner data-expected="270" data-title="Schedule tracker" }
-const scores: number[] = [80, 90, 100
-const total = scores.reduce((a, b) => a + b, 0)
-console.log(total)
-```
