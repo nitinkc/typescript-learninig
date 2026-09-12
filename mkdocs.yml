@@ -1,0 +1,85 @@
+site_name: TypeScript Learning
+site_description: A practical TypeScript syntax reference for React, Angular, Node.js, and everyday development
+
+theme:
+  name: material
+  language: en
+  features:
+    # Navigation
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top           # Back-to-top button
+    - navigation.footer        # Prev/Next page links
+    # navigation.instant disabled — breaks live reload (re-enable for production builds)
+    # - navigation.instant
+    # - navigation.instant.progress
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Content
+    - content.code.copy
+    - content.code.annotate    # (1) style code annotations
+    - content.tabs.link        # Sync tabs across page
+    - content.tooltips
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+nav:
+  - Quick reference: index.md
+  - Getting started:
+      - '1. Setup and first program': 01-setup-and-first-program.md
+      - '2. Types and values': 02-types-and-values.md
+  - Core language:
+      - '3. Functions': 03-functions.md
+      - '4. Objects and interfaces': 04-objects-and-interfaces.md
+      - '5. Arrays, tuples, and enums': 05-arrays-tuples-enums.md
+      - '6. Unions and narrowing': 06-unions-and-narrowing.md
+      - '7. Generics': 07-generics.md
+      - '8. Utility types': 08-utility-types.md
+  - Scaling up:
+      - '9. Modules and tooling': 09-modules-and-tooling.md
+      - '10. Classes': 10-classes.md
+      - '11. Async functions and promises': 11-async-and-promises.md
+  - React and TSX: 12-react-and-tsx.md
+  - Hands-on labs: 13-hands-on-labs.md
+  - Interactive playground: playground.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search
+
+extra_javascript:
+  - javascripts/code-runner.js
+
+extra_css:
+  - stylesheets/code-runner.css
+
+strict: true

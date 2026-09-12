@@ -1,0 +1,30 @@
+.code-runner-button {
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.code-editor {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  padding: 0.5rem;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  white-space: pre;
+  tab-size: 2;
+  border: 1px solid var(--md-default-fg-color--lightest, #ccc);
+  border-radius: 0.25rem;
+  background: var(--md-code-bg-color, #f5f5f5);
+  color: var(--md-default-fg-color, #000);
+  resize: vertical;
+}
+
+.code-output {
+  display: none;
+  background: var(--md-code-bg-color, #f5f5f5);
+  color: var(--md-default-fg-color, #000);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  min-height: 2rem;
+  margin: 0 0 1rem 0;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  white-space: pre-wrap;
+}
