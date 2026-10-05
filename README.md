@@ -5,6 +5,8 @@ A standalone, searchable TypeScript syntax reference for everyday development wi
 ## Run locally
 
 ```bash
+uvx --with mkdocs-material mkdocs serve
+# OR
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
